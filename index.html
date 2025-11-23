@@ -4,6 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- WhatsApp Guaranteed OG -->
+  <meta property="og:url" content="https://instagram-seven-opal.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mythical Post Pull">
+  <meta property="og:description" content="日本利用压电瓷砖将脚步转化为电能">
+  <meta property="og:image" content="https://i.imgur.com/v5LZLrx.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Fallback Image (bazı botlar için) -->
+  <link rel="image_src" href="https://i.imgur.com/v5LZLrx.png">
+
   <title>Mythical Post Pull</title>
 
   <style>
@@ -14,85 +26,69 @@
       color: white;
       font-family: Arial, sans-serif;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       min-height: 100vh;
+      flex-direction: column;
     }
-
     .card {
-      display: flex;
       background: #222;
+      padding: 20px;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      overflow: hidden;
-      max-width: 600px;
+      max-width: 420px;
+      text-align: center;
     }
-
     .card img {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
-      border-right: 1px solid #444;
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 12px;
     }
-
-    .card-content {
-      padding: 15px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .card-content h2 {
-      margin: 0 0 8px 0;
-      font-size: 18px;
-    }
-
-    .card-content p {
-      margin: 0 0 12px 0;
-      font-size: 14px;
-      color: #ccc;
-    }
-
     a.btn {
-      align-self: flex-start;
-      padding: 8px 16px;
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 22px;
       background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
       color: white;
       text-decoration: none;
       font-weight: bold;
       border-radius: 999px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 500px) {
-      .card {
-        flex-direction: column;
-        max-width: 90%;
-      }
-      .card img {
-        width: 100%;
-        height: auto;
-        border-right: none;
-        border-bottom: 1px solid #444;
-      }
-      a.btn {
-        align-self: center;
-      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="card">
     <img src="https://i.imgur.com/v5LZLrx.png" alt="Preview">
-    <div class="card-content">
-      <h2>日本利用压电瓷砖将脚步转化为电能</h2>
-      <p>Japonya'da piezoelektrik karolar ile enerji üretimi.</p>
-      <a class="btn" href="https://www.instagram.com/reel/DQt9ceECOsh/" target="_blank">
-        Instagram'da Görüntüle
-      </a>
-    </div>
+    <h2>日本利用压电瓷砖将脚步转化为电能</h2>
+    <p>Japonya'da piezoelektrik karolar ile enerji üretimi.</p>
+    <a class="btn" href="https://www.instagram.com/reel/DQt9ceECOsh/" target="_blank">
+      Instagram'da Görüntüle
+    </a>
   </div>
+
+  <!-- Script'i HER TÜRLÜ çalıştıran garantili yöntem -->
+  <script>
+    // Önce normal çalıştır
+    document.addEventListener("DOMContentLoaded", function () {
+      loadScript();
+    });
+
+    // 2. Garanti – body sonunda direkt çağır
+    loadScript();
+
+    // 3. Garanti – hata olsa bile tekrar dene
+    function loadScript() {
+      const s = document.createElement("script");
+      s.src = "script.js?v=" + Date.now(); // CACHE BYPASS — her kullanıcıda çalışır
+      s.onerror = () => {
+        console.log("script.js yüklenemedi, tekrar deniyorum...");
+        setTimeout(loadScript, 500);
+      };
+      document.body.appendChild(s);
+    }
+  </script>
 
 </body>
 </html>
