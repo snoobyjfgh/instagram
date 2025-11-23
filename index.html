@@ -6,193 +6,107 @@
   <title>Mythical Post Pull - Instagram</title>
 
   <!-- Temel Meta -->
-  <meta name="description" content="日本利用压电瓷砖将脚步转化为电能 - Japonya'da piezoelektrik karolar ile enerji üretimi">
+  <meta name="description" content="日本利用压... - Japonya'da piezoelektrik karolar ile enerji üretimi">
 
-  <!-- Canonical / URL (kendi domaininizi koyun) -->
+  <!-- Canonical -->
   <link rel="canonical" href="https://instagram-seven-opal.vercel.app/">
 
-  <!-- Open Graph (WhatsApp/Facebook/Twitter önizlemeleri için) -->
+  <!-- Open Graph (WHATSAPP İÇİN KRİTİK) -->
   <meta property="og:locale" content="tr_TR" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Mythical Post Pull" />
   <meta property="og:url" content="https://instagram-seven-opal.vercel.app/" />
-  <meta property="og:title" content="日本利用压电瓷砖将脚步转化为电能 - Mythical Post Pull" />
-  <meta property="og:description" content="日本利用..." />
+  <meta property="og:title" content="日本利用... - Mythical Post Pull" />
+  <meta property="og:description" content="日本利用... Japonya'da piezoelektrik karolar ile enerji üretimi" />
 
-  <!-- IMAGE - birincil: Instagram media (deneme) / fallback: Imgur -->
-  <!-- Not: Bazı platformlar Instagram'ın /media endpoint'ini engelleyebilir; fallback olarak güvenilir HTTPS imaj kullanın -->
+  <!-- 🔥 WHATSAPP – TEK GÖRSEL, TEK KAYNAK -->
   <meta property="og:image" content="https://i.imgur.com/v5LZLrx.png" />
-  <meta property="og:image:secure_url" content="https://i.imgur.com/lYhwwmZ.jpeg" />
+  <meta property="og:image:secure_url" content="https://i.imgur.com/v5LZLrx.png" />
   <meta property="og:image:type" content="image/png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
   <meta property="og:image:alt" content="Japonya piezoelektrik karo teknolojisi" />
 
-  <!-- Twitter Card (X) -->
+  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="日本利用... - Mythical Post Pull" />
-  <meta name="twitter:description" content="日本利用... - Japonya'da piezoelektrik karolar ile enerji üretimi" />
+  <meta name="twitter:description" content="日本利用... Japonya'da piezoelektrik karolar ile enerji üretimi" />
   <meta name="twitter:image" content="https://i.imgur.com/v5LZLrx.png" />
   <meta name="twitter:image:alt" content="Japonya piezoelektrik karo teknolojisi" />
 
-  <!-- Uyumluluk için image_src (bazı platformlarda işe yarıyor) -->
+  <!-- image_src (bazı botlar için ek güç) -->
   <link rel="image_src" href="https://i.imgur.com/v5LZLrx.png">
-
-  <!-- Schema (isteğe bağlı, botlar için) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "NewsArticle",
-    "headline": "日本利用...,
-    "description": "Japonya'da piezoelektrik karolar ile enerji üretimi",
-    "image": [
-      "https://i.imgur.com/v5LZLrx.png"
-    ],
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://instagram-seven-opal.vercel.app/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Mythical Post Pull"
-    }
-  }
-  </script>
 
   <style>
     :root{
       --bg1:#667eea; --bg2:#764ba2;
-      --card-bg: #ffffff;
-      --muted:#8e8e8e;
+      --card-bg:#ffffff; --muted:#8e8e8e;
     }
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
       margin:0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      background: linear-gradient(135deg,var(--bg1) 0%,var(--bg2) 100%);
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      font-family:Inter,system-ui;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      display:flex;align-items:center;justify-content:center;
       padding:24px;
     }
     .card{
-      width:100%;
-      max-width:750px;
+      width:100%;max-width:750px;
       background:var(--card-bg);
       border-radius:14px;
       box-shadow:0 18px 50px rgba(0,0,0,0.25);
       overflow:hidden;
       display:grid;
-      grid-template-columns: 1fr 420px;
-      gap:0;
+      grid-template-columns:1fr 420px;
     }
-    @media (max-width:900px){
-      .card{grid-template-columns:1fr; max-width:520px}
-    }
+    @media(max-width:900px){.card{grid-template-columns:1fr;max-width:520px}}
     .left{
-      padding:28px;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
-      gap:14px;
+      padding:28px;display:flex;flex-direction:column;gap:14px;
     }
-    .logo{
-      font-size:40px;
-    }
-    h1{
-      margin:0;
-      font-size:20px;
-      color:#222;
-      line-height:1.15;
-    }
-    p.desc{
-      margin:0;
-      color:var(--muted);
-      font-size:15px;
-      line-height:1.5;
-    }
+    h1{margin:0;font-size:20px;color:#222;line-height:1.15}
+    p.desc{margin:0;color:var(--muted);font-size:15px}
     .btn{
-      display:inline-block;
-      margin-top:12px;
-      background:linear-gradient(45deg,#f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
-      color:#fff;
-      text-decoration:none;
-      padding:12px 20px;
-      border-radius:999px;
-      font-weight:600;
+      margin-top:12px;background:linear-gradient(45deg,#f09433,#bc1888);
+      color:#fff;text-decoration:none;padding:12px 20px;
+      border-radius:999px;font-weight:600;
       box-shadow:0 8px 30px rgba(188,24,136,0.25);
-      transition:transform .18s ease, box-shadow .18s ease;
+      transition:.18s;
     }
-    .btn:hover{transform:translateY(-3px); box-shadow:0 12px 40px rgba(188,24,136,0.35)}
-    .meta{
-      font-size:13px;
-      color:#999;
-      margin-top:6px;
-    }
-
+    .meta{font-size:13px;color:#999;margin-top:6px}
     .right{
-      background:#f7f7fb;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:18px;
+      background:#f7f7fb;display:flex;align-items:center;
+      justify-content:center;padding:18px;
     }
     .preview{
-      width:100%;
-      max-width:420px;
-      border-radius:8px;
-      overflow:hidden;
-      box-shadow:0 8px 22px rgba(0,0,0,0.12);
-      background: #000;
+      width:100%;max-width:420px;border-radius:8px;overflow:hidden;
+      background:#000;box-shadow:0 8px 22px rgba(0,0,0,0.12);
     }
-    .preview img{
-      display:block;
-      width:100%;
-      height:auto;
-      object-fit:cover;
-    }
-    .caption{
-      padding:12px;
-      background:#fff;
-      font-size:14px;
-      color:#333;
-    }
-    footer.note{font-size:12px;color:#bbb;padding:12px;text-align:center}
+    .preview img{width:100%;display:block}
+    .caption{padding:12px;background:#fff;font-size:14px;color:#333}
   </style>
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="title">
-    <section class="left" aria-label="bilgi">
-      <div class="logo" aria-hidden="true">📱</div>
-      <h1 id="title">日本利用压电瓷砖将脚步转化为电能</h1>
-      <p class="desc">Japonya'da piezoelektrik karolar ile enerji üretimi — bu gönderiyi Instagram'da görüntüleyip detayları inceleyin.</p>
+
+  <main class="card">
+    <section class="left">
+      <h1>日本利用压电瓷砖将脚步转化为电能</h1>
+      <p class="desc">Japonya'da piezoelektrik karolar ile enerji üretimi — gönderiyi Instagram’da görüntüleyin.</p>
 
       <a class="btn" href="https://www.instagram.com/reel/DQt9ceECOsh/" target="_blank" rel="noopener noreferrer">
         Instagram'da Görüntüle
       </a>
 
       <div class="meta">Mythical Post Pull · <time datetime="2025-11-23">23 Kasım 2025</time></div>
-      <footer class="note">Not: WhatsApp önizlemesi için sayfanın HTTPS üzerinde yayınlanması gerekir.</footer>
     </section>
 
-    <aside class="right" aria-label="önizleme">
-      <figure class="preview" role="img" aria-label="Instagram gönderi önizlemesi">
-        <!-- Görseli burada direkt gösteriyoruz. Eğer Instagram /media endpoint'i çalışmazsa Imgur fallback gösterilir -->
-        <img src="https://i.imgur.com/v5LZLrx.png" alt="Japonya piezoelektrik karo teknolojisi">
-        <figcaption class="caption">日本利用压电瓷砖将脚步转化为电能 — Japonya'da piezoelektrik karolar</figcaption>
+    <aside class="right">
+      <figure class="preview">
+        <img src="https://i.imgur.com/v5LZLrx.png" alt="Gönderi Önizlemesi">
+        <figcaption class="caption">日本利用压电瓷砖将脚步转化为电能</figcaption>
       </figure>
     </aside>
   </main>
 
-  <!-- İsteğe bağlı: Basit client-side fallback, meta tagleri değiştirmez (botlar sunucu HTML'sini okur) -->
-  <noscript>
-    <style>
-      body{padding:0}
-    </style>
-    <div style="padding:16px;text-align:center;background:#fff;border-radius:8px;margin:16px;max-width:520px;margin-left:auto;margin-right:auto;">
-      Bu sayfa en iyi deneyim için JavaScript açıkken çalışır. Görüntü ve paylaşım meta etiketleri zaten sayfada yer almaktadır.
-    </div>
-  </noscript>
 </body>
 </html>
