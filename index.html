@@ -1,94 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mythical Post Pull - Instagram</title>
 
-  <!-- WhatsApp Guaranteed OG -->
-  <meta property="og:url" content="https://instagram-seven-opal.vercel.app/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mythical Post Pull">
-  <meta property="og:description" content="日本利用压...">
-  <meta property="og:image" content="https://i.imgur.com/v5LZLrx.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <!-- Temel Meta -->
+  <meta name="description" content="日本利用压电瓷砖将脚步转化为电能 - Japonya'da piezoelektrik karolar ile enerji üretimi">
 
-  <!-- Fallback Image (bazı botlar için) -->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://instagram-seven-opal.vercel.app/">
+
+  <!-- Open Graph (WHATSAPP İÇİN KRİTİK) -->
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Mythical Post Pull" />
+  <meta property="og:url" content="https://instagram-seven-opal.vercel.app/" />
+  <meta property="og:title" content="日本利用压电瓷砖将脚步转化为电能 - Mythical Post Pull" />
+  <meta property="og:description" content="日本利用... Japonya'da piezoelektrik karolar ile enerji üretimi" />
+
+  <!-- 🔥 WHATSAPP – TEK GÖRSEL, TEK KAYNAK -->
+  <meta property="og:image" content="https://i.imgur.com/v5LZLrx.png" />
+  <meta property="og:image:secure_url" content="https://i.imgur.com/v5LZLrx.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Japonya piezoelektrik karo teknolojisi" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="日本利用... - Mythical Post Pull" />
+  <meta name="twitter:description" content="日本利用... Japonya'da piezoelektrik karolar ile enerji üretimi" />
+  <meta name="twitter:image" content="https://i.imgur.com/v5LZLrx.png" />
+  <meta name="twitter:image:alt" content="Japonya piezoelektrik karo teknolojisi" />
+
+  <!-- image_src (bazı botlar için ek güç) -->
   <link rel="image_src" href="https://i.imgur.com/v5LZLrx.png">
 
-  <title>Mythical Post Pull</title>
-
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background: #111;
-      color: white;
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      flex-direction: column;
+    :root{
+      --bg1:#667eea; --bg2:#764ba2;
+      --card-bg:#ffffff; --muted:#8e8e8e;
     }
-    .card {
-      background: #222;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.5);
-      max-width: 420px;
-      text-align: center;
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui;
+      background:linear-gradient(135deg,var(--bg1),var(--bg2));
+      display:flex;align-items:center;justify-content:center;
+      padding:24px;
     }
-    .card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 12px;
+    .card{
+      width:100%;max-width:750px;
+      background:var(--card-bg);
+      border-radius:14px;
+      box-shadow:0 18px 50px rgba(0,0,0,0.25);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:1fr 420px;
     }
-    a.btn {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 12px 22px;
-      background: linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 999px;
+    @media(max-width:900px){.card{grid-template-columns:1fr;max-width:520px}}
+    .left{
+      padding:28px;display:flex;flex-direction:column;gap:14px;
     }
+    h1{margin:0;font-size:20px;color:#222;line-height:1.15}
+    p.desc{margin:0;color:var(--muted);font-size:15px}
+    .btn{
+      margin-top:12px;background:linear-gradient(45deg,#f09433,#bc1888);
+      color:#fff;text-decoration:none;padding:12px 20px;
+      border-radius:999px;font-weight:600;
+      box-shadow:0 8px 30px rgba(188,24,136,0.25);
+      transition:.18s;
+    }
+    .meta{font-size:13px;color:#999;margin-top:6px}
+    .right{
+      background:#f7f7fb;display:flex;align-items:center;
+      justify-content:center;padding:18px;
+    }
+    .preview{
+      width:100%;max-width:420px;border-radius:8px;overflow:hidden;
+      background:#000;box-shadow:0 8px 22px rgba(0,0,0,0.12);
+    }
+    .preview img{width:100%;display:block}
+    .caption{padding:12px;background:#fff;font-size:14px;color:#333}
   </style>
 </head>
-
 <body>
 
-  <div class="card">
-    <img src="https://i.imgur.com/v5LZLrx.png" alt="Preview">
-    <h2>日本利用压...</h2>
-    <p>Japonya'da piezoelektrik karolar ile enerji üretimi.</p>
-    <a class="btn" href="https://www.instagram.com/reel/DQt9ceECOsh/" target="_blank">
-      Instagram'da Görüntüle
-    </a>
-  </div>
+  <main class="card">
+    <section class="left">
+      <h1>日本利用压电瓷砖将脚步转化为电能</h1>
+      <p class="desc">Japonya'da piezoelektrik karolar ile enerji üretimi — gönderiyi Instagram’da görüntüleyin.</p>
 
-  <!-- Script'i HER TÜRLÜ çalıştıran garantili yöntem -->
-  <script>
-    // Önce normal çalıştır
-    document.addEventListener("DOMContentLoaded", function () {
-      loadScript();
-    });
+      <a class="btn" href="https://www.instagram.com/reel/DQt9ceECOsh/" target="_blank" rel="noopener noreferrer">
+        Instagram'da Görüntüle
+      </a>
 
-    // 2. Garanti – body sonunda direkt çağır
-    loadScript();
+      <div class="meta">Mythical Post Pull · <time datetime="2025-11-23">23 Kasım 2025</time></div>
+    </section>
 
-    // 3. Garanti – hata olsa bile tekrar dene
-    function loadScript() {
-      const s = document.createElement("script");
-      s.src = "script.js?v=" + Date.now(); // CACHE BYPASS — her kullanıcıda çalışır
-      s.onerror = () => {
-        console.log("script.js yüklenemedi, tekrar deniyorum...");
-        setTimeout(loadScript, 500);
-      };
-      document.body.appendChild(s);
-    }
-  </script>
+    <aside class="right">
+      <figure class="preview">
+        <img src="https://i.imgur.com/v5LZLrx.png" alt="Gönderi Önizlemesi">
+        <figcaption class="caption">日本利用压电瓷砖将脚步转化为电能</figcaption>
+      </figure>
+    </aside>
+  </main>
 
 </body>
 </html>
